@@ -7,10 +7,10 @@
 
 function tugas22(){
     var data = "Saya ingin belajar bersama"
-    var array =data.split(" ");
-    console.log(array)
+    var array =data.split(" "); // string di ubah ke array
+    console.log(array) // buat ngetes hasilnya
     var hasil = array.forEach(function(item,index){
-        console.log('Item :', item ,'Index ke:', index);
+        console.log('Item :', item ,'Index ke:', index); // terus di tampilin make foreach
     })
 }
 tugas22()
