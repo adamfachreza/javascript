@@ -1,3 +1,4 @@
+// foreach untuk perulangan pada array
 function foreach(){
     var data = ['a','b','c'];
 
