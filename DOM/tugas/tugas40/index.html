@@ -1,0 +1,32 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>Tugas40</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <button type="button" onclick="tombol()" name="button">jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Base URI</b> Property : <br />
+        <p id="uri">contoh</p>
+        <hr />
+        <b>Body</b> Property : <br />
+        <p id="bp">contoh</p>
+        <hr />
+        <b>Create</b> Element : <br /><br />
+        <script type="text/javascript">
+            function tombol(){
+              var color = document.body.style.background="green"
+              document.getElementById("bp").innerHTML ="color:" + color;
+
+              var uri = document.documentURI;
+              document.getElementById("uri").innerHTML = uri;
+
+              var ce = document.createElement('input');
+              document.body.appendChild(ce);
+                
+            }
+        </script>
+    </body>
+</html>
