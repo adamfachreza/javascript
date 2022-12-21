@@ -1,0 +1,37 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>Tugas39</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <button type="button" onclick="tombol()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Active Element</b> Property : <br />
+        <p id="ae">contoh</p>
+        <hr />
+        <b>addEventListener()</b> Property : <br />
+        <p id="ael">contoh</p>
+        <hr />
+        <b>Anchor</b> Property (<a name="jeruk" href="#">Jeruk</a>
+        <a name="semangka" href="#">Semangka</a>) : <br />
+        <p id="anchor">contoh</p>
+        <hr />
+
+        <script type="text/javascript">
+            function tombol(){
+                //active element
+                var active = document.activeElement.tagName;
+                document.getElementById("ae").innerHTML = active;
+                //addEventrListener
+                document.addEventListener("click",function(){
+                    document.getElementById("ael").innerHTML = "Sukses ! Kode Berhasil Diubah"
+                })
+                //anchor property
+                var anchor = document.anchors.length;
+                document.getElementById("anchor").innerHTML = anchor;
+            }
+        </script>
+    </body>
+</html>

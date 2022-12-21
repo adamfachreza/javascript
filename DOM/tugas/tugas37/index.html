@@ -1,0 +1,32 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>Tugas 37</title>
+    </head>
+    <body>
+        <h1>Tugas 37</h1>
+        <button type="button" onclick="tombol()" name="tombol">jalankan</button>
+        <br />
+        <br />
+        <hr />
+        Atribut <b>getNamedItem()</b> :
+        <p id="getnameitem">contoh</p>
+        <hr />
+        Atribut <b>name()</b> :
+        <p id="getname">contoh</p>
+        <hr />
+        Atribut <b>length()</b> :
+        <p id="length">contoh</p>
+        <hr />
+        <script type="text/javascript">
+            function tombol(){
+                var a = document.getElementsByTagName("button")[0];
+                var b = a.attributes.getNamedItem("onclick").value;
+                var c = a.attributes[0].name;
+                var d = a.attributes.length;
+                document.getElementById("getnameitem").innerHTML = b; // tombol
+                document.getElementById("getname"). innerHTML = c; // typw
+                document.getElementById("length").innerHTML = d; // 3
+            }
+        </script>
+    </body>
+</html>
