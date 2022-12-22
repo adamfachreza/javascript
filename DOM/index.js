@@ -20,3 +20,11 @@ function pilih_menu(){
     var x = document.getElementById("menu").value;
     document.getElementById("teks").innerHTML = "Kamu Pilih Menu : " + x;
 }
+
+function copy_text(){
+    document.getElementById("object_text").innerHTML="kamu telah mengcopy text";
+}
+
+function paste_text(){
+
+}
