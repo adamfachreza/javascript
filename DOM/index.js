@@ -48,3 +48,7 @@ function drop(event){
     event.target.appendChild(document.getElementById(data));
     document.getElementById("object_text").innerHTML = "element sudah di drop"
 }
+
+function error_load(){
+    alert("error mengload gambar")
+}
