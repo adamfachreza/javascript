@@ -52,3 +52,19 @@ function drop(event){
 function error_load(){
     alert("error mengload gambar")
 }
+
+function sedang_focus(x){
+    x.style.background = "lightblue";
+}
+
+function ubah_textbox(x){
+    x.style.background = "lightblue"
+}
+
+function zoomin(x){
+    x.style.fontSize = "20pt";
+}
+
+function zoomout(x){
+    x.style.fontSize = "12pt"
+}
