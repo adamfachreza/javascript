@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <!-- <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
         </style>
         <title>Document</title>
     </head>
-    <body>
+    <body> -->
         <!-- <h1>Belajar JS DOM</h1> -->
         <!-- <script type="text/javascript" src="index.js"></script> manggil file js dari luar html -->
         <!-- <script type="text/javascript">
@@ -299,10 +299,33 @@
         <script type="text/javascript" src="index.js"></script> -->
 
         <!-- copy paste event -->
-        <input type="text" oncopy="copy_text()" value="Coba kamu copy text ini">
+        <!-- <input type="text" oncopy="copy_text()" value="Coba kamu copy text ini">
         <p id="text_copy"></p>
         <input type="text" onpaste="paste_text()" value="paste disini">
         <p id="text_paste"></p>
+        <script type="text/javascript" src="index.js"></script> -->
+
+        <!-- drag and drop event -->
+        <head>
+        <title>javascript DOM</title>
+        <style>
+                .droptarget{
+                    float: left;
+                    width: 100px;
+                    height: 35px;
+                    margin: 15px;
+                    padding: 10px;
+                    border: 1px solid #aaaaaa;
+                }
+        </style>
+    </head>
+    <body>
+        <p>drag element diantara dua kotak</p>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">drag saya</p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <p id="object_text"></p>
         <script type="text/javascript" src="index.js"></script>
     </body>
     
