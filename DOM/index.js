@@ -29,7 +29,7 @@ function paste_text(){
     document.getElementById("text_paste").innerHTML = "kamu telah mempaste";
 }
 
-
+// start drag and drop event 
 function dragStart(event){
     event.dataTransfer.setData("Text", event.target.id);
 }
@@ -48,19 +48,27 @@ function drop(event){
     event.target.appendChild(document.getElementById(data));
     document.getElementById("object_text").innerHTML = "element sudah di drop"
 }
+// end drag and drop event
 
+// start error event
 function error_load(){
     alert("error mengload gambar")
 }
+// end error event
 
+// start focus event
 function sedang_focus(x){
     x.style.background = "lightblue";
-}
+} 
+// end focus event
 
+// keypress
 function ubah_textbox(x){
     x.style.background = "lightblue"
 }
+// end keypress
 
+// mouseover and mouseout
 function zoomin(x){
     x.style.fontSize = "20pt";
 }
@@ -68,3 +76,20 @@ function zoomin(x){
 function zoomout(x){
     x.style.fontSize = "12pt"
 }
+// end mouseover and mouseout
+
+// geolocation
+var x = document.getElementById("");
+
+function get_location(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(tunjukan_posisi);
+    }else{
+        x.innerHTML = "geolocation tidak support di browser anda"
+    }
+}
+
+function tunjukan_posisi(position){
+    x.innerHTML = "Latitude : " + position.ciirds.latitude + "<br>Longitude : " + position.coords.longitude 
+}
+//end geolocation

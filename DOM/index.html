@@ -346,7 +346,13 @@
          ini keyup : <input type="text" onkeyup="ubah_textbox(this)"> -->
 
          <!-- mouseOver dan MouseOut event -->
-         <p onmouseover="zoomin(this)" onmouseout="zoomout(this)"> Dekatkan Mouse ke Tulisan ini</p>
+         <!-- <p onmouseover="zoomin(this)" onmouseout="zoomout(this)"> Dekatkan Mouse ke Tulisan ini</p> -->
+
+         <!-- Geolocation -->
+         <p> click tombol ini untuk mendapatkan koordinat</p>
+
+         <button onclick="get_location()"> coba dapatkan posisi</button>
+         <p id="lokasi"> </p>
          <script text="type/javascript" src="index.js"></script>
 
     </body>
