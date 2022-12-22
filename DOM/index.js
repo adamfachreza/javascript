@@ -22,9 +22,9 @@ function pilih_menu(){
 }
 
 function copy_text(){
-    document.getElementById("object_text").innerHTML="kamu telah mengcopy text";
+    document.getElementById("text_copy").innerHTML="kamu telah mengcopy text";
 }
 
 function paste_text(){
-
+    document.getElementById("text_paste").innerHTML = "kamu telah mempaste";
 }
