@@ -175,3 +175,18 @@ function open_window(){
 function cw(){
     a.close();
 }
+
+function cetak(){
+    window.print();
+}
+
+function panggil_frame(){
+    window.frames[1].location = "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjIuLOr54_8AhXVoWMGHYAXCHYQPAgI";
+}
+
+function jawab(){
+    var nama = prompt("masukan nama kamu","nama");
+    if(nama != null){
+        document.getElementById("jawaban").innerHTML = "Hello " + nama + " apa kabar ?";
+    }
+}
