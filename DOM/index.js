@@ -93,3 +93,24 @@ function tunjukan_posisi(position){
     x.innerHTML = "Latitude : " + position.ciirds.latitude + "<br>Longitude : " + position.coords.longitude 
 }
 //end geolocation
+
+// History Back
+function goback(){
+    window.history.back();
+}
+
+// HIstory Forward
+function forward(){
+    window.history.forward();
+}
+
+function go(){
+    // window.history.go(-2); // mundur 2 halaman
+    window.history.go(-2);
+}
+
+// Item HTML Collection
+function item_method(){
+    var x = document.getElementsByTagName("p");
+    alert(x.item(1).innerHTML)
+}
