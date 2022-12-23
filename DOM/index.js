@@ -109,8 +109,69 @@ function go(){
     window.history.go(-2);
 }
 
-// Item HTML Collection
+// HTML Collection
 function item_method(){
     var x = document.getElementsByTagName("p");
+    // item html collection
     alert(x.item(1).innerHTML)
+    // length html collection
+    alert(x.length)
+}
+
+// hash location
+function hash_location(){
+    location.hash = "panggil1";
+    var x = "sekarang anchirnya " + location.hash;
+    document.getElementById("hash").innerHTML = x;
+}
+
+function hash_location2(){
+    location.hash = "panggil2";
+    var x = "sekarang anchornya " + location.hash;
+    document.getElementById("hash").innerHTML = x;
+}
+
+// host location
+function host_location(){
+   var a = location.host;
+   document.getElementById("host").innerHTML = a;
+}
+
+// hostname
+function hostname_location(){
+    var a = location.hostname;
+    document.getElementById("hostname").innerHTML = a;
+}
+
+// href location
+function lihat_href(){
+    var a = location.href;
+    document.getElementById("href").innerHTML = a;
+}
+
+// alert confirm
+function ac(){
+    var text;
+    var r = confirm("anda yakin ?");
+    if(r == true){
+        text = "kamu telah yakin";
+    }else{
+        text = "kamu tidak yakin";
+    }document.getElementById("hasil").innerHTML = text;
+}
+
+// open window
+function ow(){
+    window.open("https://niomic.com");
+}
+
+// close window
+var a;
+function open_window(){
+    a = window.open("","Open","width-500,height-400")
+    a.document.write("<p> anda berhasil membuka window </p>");
+}
+
+function cw(){
+    a.close();
 }
